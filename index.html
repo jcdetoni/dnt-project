@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dtn project</title>
+</head>
+<body>
+    <h1>DTN Project</h1>
+    <div id="hxt">
+
+    </div>
+    <div id="content">
+
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugin.js"></script>
+    <script type="text/javascript">
+
+        var DTN = $("div#content").loadEditor();
+
+        DTN.addFormulario({
+            title: 'Form 1',
+            id : 'form1',
+            campos : [
+                {
+                    id : 'campo1',
+                    name : 'campo1',
+                    type : 'color',
+                    tag : 'input',
+                    label : 'Campo 1'
+                },
+                {
+                    id : 'campo2',
+                    name : 'campo2',
+                    type : 'text',
+                    tag : 'input',
+                    label : 'Campo 2'
+                }
+            ]
+        });
+
+        DTN.addFormulario({
+            title: 'Form 2',
+            id : 'form2',
+            campos : [
+                {
+                    id : 'campo1',
+                    name : 'campo1',
+                    type : 'color',
+                    tag : 'input',
+                    label : 'Campo 1'
+                },
+                {
+                    id : 'campo2',
+                    name : 'campo2',
+                    type : 'text',
+                    tag : 'input',
+                    label : 'Campo 2'
+                }
+            ]
+        })
+    </script>
+</body>
+</html>
